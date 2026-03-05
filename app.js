@@ -40,13 +40,19 @@ app.use(function(err, req, res, next) {
 
 
 const sequelize = require('./config/database');
+const User = require('./modules/user/user');
+sequelize.sync({alter:true})
+  .then( () => console.log('Sincronia realizada')  )
+  .catch( err => console.log('Erro de sincronia',err));
+
+/*
+// testa a conexão com o MySQL
 sequelize.authenticate()
-  .then(
-    () => console.log('Conexão com o MySQL ok')
-  )
-  .catch(
-    err => console.error('Erro de conexão',err)
-  );
+  .then( ()=> console.log('Conexão com MySQL ok!') )
+  .catch( err => console.error('Erro de conexão',err)  );
+*/
+
 
 
 module.exports = app;
+
