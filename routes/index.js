@@ -11,4 +11,8 @@ router.get('/register', function(req, res, next) {
   
 });
 
+const userController = require('..modules/user/userController');
+// requisição POST para processar o form de cadastro
+router.post('/register', userController.register);
+
 module.exports = router;
