@@ -31,9 +31,9 @@
 | R-03 | Mostrar número de curtidas errado                          | Não Funcional | Médio         | Baixo   | Baixa      |
 | R-04 | Senha fraca ser aceita no cadastro                         | Não Funcional | Alta          | Crítico | Crítica    |
 | R-05 | Cadastrar e-mail e/ou usuário já existente                 | Funcional     | Médio         | Alto    | Alta       |
-| R-06 | Notificação não chegar ao usuário                          | Não Funcional | Média         | Médio   | Média      |
+| R-06 | Notificação não chegar ao usuário                          | Não Funcional | Média         | Médio   | Médio      |
 | R-07 | Não chegar o e-mail de recuperação de senha                | Funcional     | Médio         | Alto    | Alta       |
-| R-08 | Sistema duplicar vídeo publicado                           | Funcional     | Baixo         | Alto    | Média      |
-| R-09 | Sistema permitir upload de vídeo com formato não suportado | Funcional     | Médio         | Médio   | Média      |
-| R-10 | Usuário não conseguir fazer logout da conta                | Funcional     | Baixo         | Médio   |            |
+| R-08 | Sistema duplicar vídeo publicado                           | Funcional     | Baixo         | Alto    | Médio      |
+| R-09 | Sistema permitir upload de vídeo com formato não suportado | Funcional     | Médio         | Médio   | Médio      |
+| R-10 | Usuário não conseguir fazer logout da conta                | Funcional     | Baixo         | Médio   | Médio      |
 
