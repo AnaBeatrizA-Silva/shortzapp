@@ -3,8 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const flah = require('connect-flash');
-const session = require('')
+const session = require('express-session');
+const flash = require('connect-flash');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -18,6 +18,13 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'frase_secreta_aqui',
+  resave: false,
+  saveUninitialized: false,
+  cookie: { maxAge: 1000 * 60 * 60 * 24 }
+}));
 
 app.use(flash);
 app.use((req, res, next) => {
